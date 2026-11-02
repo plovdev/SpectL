@@ -9,7 +9,7 @@
     <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
 
     <!-- Main logger !-->
-    <logger name="org.plovdev.audioengine" level="DEBUG" additivity="false">
+    <logger name="org.plovdev.audioengine" level="INFO" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
 
