@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%cyan(%d{HH:mm:ss.SSS}) %green([%thread]) %highlight(%-5level) %red(%logger{0}) %yellow(-) %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
+
+    <!-- Main logger !-->
+    <logger name="org.plovdev.audioengine" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <logger name="com.plovdev.spectl" level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+</configuration>
